@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  padding-top: 13rem;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.contentBox {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.glassesBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.blackGlasses {
+  background-image: url("https://pngimg.com/uploads/sunglasses/sunglasses_PNG142.png");
+  background-size: 220px;
+}
+
+.blueGlasses {
+  background-image: url("http://pngimg.com/uploads/sunglasses/sunglasses_PNG150.png");
+  background-size: 240px;
+}
+
+.sportsGlasses {
+  background-image: url("http://pngimg.com/uploads/sunglasses/sunglasses_PNG93.png");
+  background-size: 210px;
+}
+
+.copGlasses {
+  background-image: url("http://pngimg.com/uploads/sunglasses/sunglasses_PNG41.png");
+  background-size: 210px;
+}
+
+.glasses {
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  cursor: grab;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.glasses:active {
+  cursor: grabbing;
+}
+
+.placeholder {
+  position: relative;
+  width: 350px;
+  height: 225px;
+  background-image: url("  http://pngimg.com/uploads/brick/brick_PNG3320.png");
+  background-size: contain;
+  background-position: center;
+  background-size: 350px;
+  background-repeat: no-repeat;
+}
+
+.placeholder :first-child {
+  left: 69px;
+  top: -10px;
+}
+
+.placeholderDog {
+  position: relative;
+  width: 210px;
+  height: 100px;
+  top: 93px;
+  left: 136px;
+}
+
+.placeholderDog :first-child {
+  rotate: 356deg;
+}
+
+.dog {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-image: url("https://www.wmj.ru/imgs/2020/05/21/13/3920290/644c28f1af782401d0edefabfa025506921f1f96.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+.hide {
+  display: none;
+}
